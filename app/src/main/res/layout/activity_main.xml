@@ -19,14 +19,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
+            android:text="Weight"
             android:id="@+id/textView" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/weight"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="77" />
     </LinearLayout>
 
     <LinearLayout
@@ -38,14 +39,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
+            android:text="Height"
             android:id="@+id/textView2" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/height"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="1.7" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,14 +58,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="Calculate BMI"
             android:id="@+id/button"
             android:onClick="bmi" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="Help"
             android:id="@+id/b_help" />
     </LinearLayout>
 

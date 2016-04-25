@@ -1,5 +1,6 @@
 package com.tom.bmi;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -69,11 +70,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         float weight = Float.parseFloat(edWeight.getText().toString());
         float height = Float.parseFloat(edHeight.getText().toString());
         float bmi = weight/(height*height);
-        new AlertDialog.Builder(this)
+        Intent intent = new Intent(this, ResultActivity.class);
+        intent.putExtra("EXTRA_BMI", bmi);
+        startActivity(intent);
+
+        /*new AlertDialog.Builder(this)
                 .setTitle("BMI")
                 .setMessage("BMI is "+bmi)
                 .setPositiveButton("OK", null)
-                .show();
+                .show();*/
     }
 
     @Override
